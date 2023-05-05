@@ -1,12 +1,112 @@
-html{
+/* html{
     height: 100%;
 
-}
-body{
+} */
+
+ body{
     margin: 0;
     min-height: 100%;
-    display: flex;
+    background-color: #EEEBDF;
+    font-family: 'Josefin Sans', sans-serif;
+ /*    display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center; 
+    align-content: center;  */
+} 
+
+#profile-pic{
+    width: 750px;
+    height: auto;
+    clip-path: circle(200px at center);
+    overflow: hidden;
 }
+
+#section-one{
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+}
+
+#about-me-p{
+    text-align: justify;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+#my-name{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+}
+
+#my-title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+}
+
+#contact-me-btn{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    background-color: #EEEBDF;
+    border: 1px solid #EB975B;
+    padding: 8px 20px;
+    border-radius: 4px;
+    color: #EB975B;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#section-two{
+    background-color: #f6a93542;
+    text-align: center;
+    padding-top: 170px;
+    margin: 0; 
+}
+
+#skills-title{
+    font-size: 40px;
+}
+
+/* .skills-sections{
+    margin-bottom: 25px;
+} */
+
+#skills-container{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.align-right{
+    text-align: end;
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    margin-right: 0px;
+}
+
+.align-left{
+    text-align: start;
+    font-size: 35px;
+    font-weight: 300;
+    margin-left: 0px;
+}
+
+.align-right>.skills-icons>img{
+    margin-left: 30px;
+}
+
+.align-left>.skills-icons>img{
+    margin-right: 30px;
+}
+
+.skills-icons>img{
+    /* filter: drop-shadow(8px 8px 4px #757575); */
+    /* Buscar como aplicar borde a SVG y desfasar */
+}
+
+.row {
+    --bs-gutter-x: 4rem;
+  }

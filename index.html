@@ -18,18 +18,20 @@
 
 </head>
 <body>
-    <button id="contact-me-btn">Contact me!</button>
+    <button id="contact-me-btn" class="d-none d-md-block">Contact me!</button>
     <!-- Top section -->
     <div class="row" id="section-one">
-        <div class="col-2"></div>
-        <div class="col-8 mx-auto">
-            <img src="https://cdn.dribbble.com/userupload/4278708/file/original-2ddf812a21d5f8db3a9d5d25d812a73e.jpg?compress=1&resize=1024x768" alt="A guy, by Bojan Oreskovic" id="profile-pic">
+        <div class="col-lg-2 col-0"></div>
+        <div class="col-lg-8 col-md-12 mx-auto">
+<!--             <img src="https://cdn.dribbble.com/userupload/4278708/file/original-2ddf812a21d5f8db3a9d5d25d812a73e.jpg?compress=1&resize=1024x768" alt="A guy, by Bojan Oreskovic" id="profile-pic" title="A guy, by Bojan Oreskovic"> -->
+            <img src="./assets/pxArt.png" alt="A guy, by Bojan Oreskovic" id="profile-pic" title="A guy, by Bojan Oreskovic">
+            <!-- Placeholder profile picture, will be changed -->
             <h1 id="my-name">Rafael Encinas</h1>
             <h4 id="my-title">Full-Stack Web Developer</h4>
             <br>
             <p id="about-me-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales vulputate egestas. Donec convallis eget ex sit amet maximus. Nulla facilisi. Nam fermentum nisi sed tellus hendrerit, id aliquet metus imperdiet.</p>
         </div>
-        <div class="col-2"></div>
+        <div class="col-lg-2 col-0"></div>
     </div>
     
     <!-- Skills section -->
@@ -38,44 +40,71 @@
        
         <div class="col-12 mx-auto">
             <h5 id="skills-title">Some of my skills</h4>
-            <div class="row gx-10" id="skills-container">
+            <div class="row gx-10 gy-5" id="skills-container">
                <!-- Front end -->
-                <div class="col-6 align-right">
-                    <div class="skills-sections">Front end</div>
+                <div class="col-lg-6 col-xl-6 col-xs-12 col-sm-12 col-md-12 justify-content-end d-flex align-items-sm-center align-items-lg-end align-right">
+                    <div class="skills-sections text-lg-end text-center">
+                        Front end
+                        <div class="specific-skills">
+                            HTML5 - CSS3 - JavaScript - Bootstrap 5
+                        </div>
+                    </div>
                     <div class="skills-icons">
-                        <img src="./assets/html-logo.svg" alt="">
-                        <img src="./assets/css-logo.svg" alt="">
-                        <img src="./assets/js-logo.svg" alt="">
-                        <img src="./assets/bootstrap-logo.svg" alt="">
+                        <img src="./assets/html-logo.svg" alt="" title="HTML5">
+                            <img src="./assets/shield-border.svg" alt="" class="shield-border-1 d-none d-sm-none d-md-none d-lg-block" title="HTML5">
+                        <img src="./assets/css-logo.svg" alt="" title="CSS3">
+                            <img src="./assets/shield-border.svg" alt="" class="shield-border-2 d-none d-sm-none d-md-none d-lg-block" title="CSS3">
+                        <img src="./assets/js-logo.svg" alt="" title="JavaScript">
+                            <img src="./assets/shield-border.svg" alt="" class="shield-border-3 d-none d-sm-none d-md-none d-lg-block" title="JavaScript">
+                        <img src="./assets/bootstrap-logo.svg" alt="" title="Bootstrap 5">
+                            <img src="./assets/bootstrap-border.svg" alt="" class="shield-border-4 d-none d-sm-none d-md-none d-lg-block" title="Bootstrap 5">
                     </div>
                 </div>
                 <!-- Back end -->
-                <div class="col-6 align-left">
-                    <div class="skills-sections">Back end</div>
+                <div class="col-lg-6 col-xl-6 col-xs-12 col-sm-12 col-md-12 justify-content-end d-flex align-items-sm-center align-items-lg-start align-left">
+                    <div class="skills-sections text-lg-end text-center">
+                        Back end
+                        <div class="specific-skills">
+                            Java 17 - Spring Boot - MySQL
+                        </div>
+                    </div>
                     <div class="skills-icons">
-                        <img src="./assets/java-logo.svg" alt="">
-                        <img src="./assets/springboot-logo.svg" alt="">
-                        <img src="./assets/mysql-logo.svg" alt="">
+                        <img src="./assets/java-logo.svg" alt="" title="Java">
+                            <img src="./assets/circle-border.svg" alt="" class="shield-border-5 d-none d-sm-none d-md-none d-lg-block" title="Java">
+                        <img src="./assets/springboot-logo.svg" alt="" title="Spring Boot">
+                            <img src="./assets/springboot-border.svg" alt="" class="shield-border-6 d-none d-sm-none d-md-none d-lg-block" title="Spring Boot">
+                        <img src="./assets/mysql-logo.svg" alt="" title="MySQL">
+                            <img src="./assets/circle-border.svg" alt="" class="shield-border-7 d-sm-none d-none d-md-none d-lg-block" title="MySQL">
                     </div>
                 </div>
                 <!-- Misc. -->
-                <div class="col-6 align-right">
-                    <div class="skills-sections">Miscellaneous</div>
-                    <div>
-                        <span>git</span>
-                        <span>github</span>
-                        <span>figma</span>
-                        <span>ai</span>
-                        <span>pre</span>
+                <div class="col-lg-6 col-xl-6 col-xs-12 col-sm-12 col-md-12 justify-content-end d-flex align-items-sm-center align-items-lg-end align-right">
+                    <div class="skills-sections text-lg-end text-center">
+                        Miscellaneous
+                        <div class="specific-skills">
+                            Git - Github - Figma - Adobe Illustrator - Adobe Premiere Pro
+                        </div>
+                    </div>
+                    <div class="skills-icons">
+                        <img src="./assets/git-icon.svg" alt="" title="Git">
+                        <img src="./assets/github-icon.svg" alt="" title="Github">
+                        <img src="./assets/figma_logo.svg" alt="" title="Figma">
+                        <img src="./assets/illustrator-logo.svg" alt="" title="Adobe Illustrator">
+                        <img src="./assets/premiere-logo.svg" alt="" title="Adobe Premiere Pro">
                     </div>
                 </div>
                 <!-- Hobbies -->
-                <div class="col-6 align-left">
-                    <div class="skills-sections">Hobbies</div>
-                    <div>
-                        <span>DnD</span>
-                        <span>Mini paint</span>
-                        <span>3D</span>
+                <div class="col-lg-6 col-xl-6 col-xs-12 col-sm-12 col-md-12 justify-content-end d-flex align-items-sm-center align-items-lg-start align-left">
+                    <div class="skills-sections text-lg-start text-center">
+                        Hobbies
+                        <div class="specific-skills">
+                            Dungeons&Dragons - Tabletop Miniature Painting - 3D Printing
+                        </div>
+                    </div>
+                    <div class="skills-icons">
+                        <img src="./assets/dnd-logo2.svg" alt="" title="Dungeons & Dragons">
+                        <img src="./assets/mini-logo.svg" alt="" title="Tabletop Miniature Painting">
+                        <img src="./assets/3d-logo.svg" alt="">
                     </div>
                 </div>
 
@@ -84,7 +113,139 @@
         
     </div>
 
-
+    <div class="row" id="section-three">
+        <div id="backgroundPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            
+        </div>
+        <button id="resetPattern">Reset Pattern</button>
+        <div class="row mx-auto text-center" id="frontCard">
+            <div class="col-12">
+                <h1>Recent Projects</h1>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-xs-12">
+                <h1>Test 1</h1>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-xs-12">
+                <h1>Test 2</h1>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-xs-12">
+                <h1>Test 3</h1>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-xs-12">
+                <h1>Test 4</h1>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -92,6 +253,6 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
 </body>
 </html>

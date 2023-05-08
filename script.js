@@ -1,4 +1,32 @@
-console.log("Hello there")
+// Get the body width
+let bodyWidth = document.body.clientWidth;
+
+console.log("Body Width: " + bodyWidth);
+//Calculate how many icons per row to create
+let calcHowManyIcons = Math.floor(bodyWidth/62.9) -1 ;
+console.log("width/61: " + Math.floor(bodyWidth/62.9));
+
+//Location to append the icons
+let backgroundPatternLocation = document.querySelector("#backgroundPattern");
+
+//String to concatenate the img HTML element, repeats 
+let concatIcons = "";
+for(let i = 0; i<calcHowManyIcons; i++){
+    concatIcons += `<img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+    `;
+}
+
+//We need to get the "recentProjectsBody" section height in order to calculate
+//how many icon containers are needed to fill the space.
+
+//Append "n" div containers with the img elements as childs, where n = recentProjectsBody / icon height = (Math.ceil(recentProjectsBody/62.9))
+for(let i = 0; i <= 6 ; i++){
+    backgroundPatternLocation.innerHTML += `
+<div>
+${concatIcons}
+</div>
+`;
+}
 
 let mcmPattern = document.querySelector(".mcmPattern");
 let mcmPatterCollection = document.getElementsByClassName("mcmPattern")
@@ -51,11 +79,5 @@ let sectionStyle = window.getComputedStyle(frontCard,null);
 let box = document.querySelector(".testClass");
 let width = box.clientWidth;
 let heigth = box.clientHeight;
-
-let bodyWidth = document.body.clientWidth;
-
-console.log("Body Width: " + bodyWidth);
-console.log("width/61: " + Math.floor(bodyWidth/62.9));
-console.log("Height: " + heigth);
 
 

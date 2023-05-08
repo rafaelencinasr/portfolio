@@ -44,3 +44,18 @@ function getCurrentRotation(el){
     }
     return 0;
 }
+
+let frontCard = document.querySelector("#frontCard");
+let sectionStyle = window.getComputedStyle(frontCard,null);
+
+let box = document.querySelector(".testClass");
+let width = box.clientWidth;
+let heigth = box.clientHeight;
+
+let bodyWidth = document.body.clientWidth;
+
+console.log("Body Width: " + bodyWidth);
+console.log("width/61: " + Math.floor(bodyWidth/62.9));
+console.log("Height: " + heigth);
+
+

@@ -20,20 +20,22 @@
 <body>
     <button id="contact-me-btn" class="d-none d-md-block">Contact me!</button>
     <!-- Top section -->
-    <div class="row" id="section-one">
-        <div class="col-lg-2 col-0"></div>
-        <div class="col-lg-8 col-md-12 mx-auto">
-<!--             <img src="https://cdn.dribbble.com/userupload/4278708/file/original-2ddf812a21d5f8db3a9d5d25d812a73e.jpg?compress=1&resize=1024x768" alt="A guy, by Bojan Oreskovic" id="profile-pic" title="A guy, by Bojan Oreskovic"> -->
-            <img src="./assets/pxArt.png" alt="A guy, by Bojan Oreskovic" id="profile-pic" title="A guy, by Bojan Oreskovic">
-            <!-- Placeholder profile picture, will be changed -->
-            <h1 id="my-name">Rafael Encinas</h1>
-            <h4 id="my-title">Full-Stack Web Developer</h4>
-            <br>
-            <p id="about-me-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales vulputate egestas. Donec convallis eget ex sit amet maximus. Nulla facilisi. Nam fermentum nisi sed tellus hendrerit, id aliquet metus imperdiet.</p>
+    <div id="top-container">
+        <div class="row" id="section-one">
+            <div class="col-lg-3 col-0"></div>
+            <div class="col-lg-6 col-md-12 mx-auto">
+    <!--             <img src="https://cdn.dribbble.com/userupload/4278708/file/original-2ddf812a21d5f8db3a9d5d25d812a73e.jpg?compress=1&resize=1024x768" alt="A guy, by Bojan Oreskovic" id="profile-pic" title="A guy, by Bojan Oreskovic"> -->
+                <img src="./assets/profile-pic.svg" alt="A guy, by Bojan Oreskovic" id="profile-pic" title="A guy, by Bojan Oreskovic">
+                <!-- Placeholder profile picture, will be changed -->
+                <h1 id="my-name">Rafael Encinas</h1>
+                <h4 id="my-title">Full-Stack Web Developer</h4>
+                <br>
+                <p id="about-me-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales vulputate egestas. Donec convallis eget ex sit amet maximus. Nulla facilisi. Nam fermentum nisi sed tellus hendrerit, id aliquet metus imperdiet.</p>
+            </div>
+            <div class="col-lg-3 col-0"></div>
         </div>
-        <div class="col-lg-2 col-0"></div>
+        
     </div>
-    
     <!-- Skills section -->
 
     <div class="row" id="section-two">
@@ -113,8 +115,18 @@
         
     </div>
 
-    <div class="row" id="section-three">
+    <div id="section-three">
         <div id="backgroundPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
+            <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
             <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
             <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
             <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
@@ -228,21 +240,41 @@
             
         </div>
         <button id="resetPattern">Reset Pattern</button>
-        <div class="row mx-auto text-center" id="frontCard">
-            <div class="col-12">
+        <div class="row mx-auto text-center gy-4  testClass" id="frontCard">
+            <div class="col-12" id="projects-title">
                 <h1>Recent Projects</h1>
             </div>
-            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-xs-12">
-                <h1>Test 1</h1>
+            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-xs-12 projectCard">
+                <a href="https://www.google.com/" target="_blank">
+                    <img src="./assets/pxArt.png" alt="" class="projectPic">
+                </a>
+                <a href="https://www.google.com/" target="_blank">
+                    <h1>Test 1</h1>
+                </a>
             </div>
-            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-xs-12">
-                <h1>Test 2</h1>
+            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-xs-12 projectCard">
+                <a href="https://www.google.com/" target="_blank">
+                    <img src="./assets/pxArt.png" alt="" class="projectPic">
+                </a>
+                <a href="https://www.google.com/" target="_blank">
+                    <h1>Test 2</h1>
+                </a>
             </div>
-            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-xs-12">
-                <h1>Test 3</h1>
+            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-xs-12 projectCard">
+                <a href="https://www.google.com/" target="_blank">
+                    <img src="./assets/pxArt.png" alt="" class="projectPic">
+                </a>
+                <a href="https://www.google.com/" target="_blank">
+                    <h1>Test 3</h1>
+                </a>
             </div>
-            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-xs-12">
-                <h1>Test 4</h1>
+            <div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-xs-12 projectCard">
+                <a href="https://www.google.com/" target="_blank">
+                    <img src="./assets/pxArt.png" alt="" class="projectPic">
+                </a>
+                <a href="https://www.google.com/" target="_blank">
+                    <h1>Test 4</h1>
+                </a>
             </div>
         </div>
     </div>

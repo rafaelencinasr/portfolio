@@ -18,14 +18,14 @@
 
 </head>
 <body>
-    <button id="contact-me-btn" class="d-none d-md-block">Contact me!</button>
+    <a id="contact-me-btn" class="d-none d-md-block" href="#section-four">Contact me!</a>
     <!-- Top section -->
     <div id="top-container">
         <div class="row" id="section-one">
             <div class="col-lg-3 col-0"></div>
             <div class="col-lg-6 col-md-12 mx-auto">
     <!--             <img src="https://cdn.dribbble.com/userupload/4278708/file/original-2ddf812a21d5f8db3a9d5d25d812a73e.jpg?compress=1&resize=1024x768" alt="A guy, by Bojan Oreskovic" id="profile-pic" title="A guy, by Bojan Oreskovic"> -->
-                <img src="./assets/profile-pic.svg" alt="A guy, by Bojan Oreskovic" id="profile-pic" title="A guy, by Bojan Oreskovic">
+                <img src="./assets/profile-pic.svg" alt="Illustration of myself in the UPA cartoons style" id="profile-pic" title="Illustration by my wife">
                 <!-- Placeholder profile picture, will be changed -->
                 <h1 id="my-name">Rafael Encinas</h1>
                 <h4 id="my-title">Full-Stack Web Developer</h4>
@@ -38,12 +38,13 @@
         </div>
         
     </div>
-    <!-- Skills section -->
 
+
+    <!-- Skills section -->
     <div class="row" id="section-two">
        
         <div class="col-12 mx-auto">
-            <h5 id="skills-title">Some of my skills</h4>
+            <h4 id="skills-title" class="sectionTitle">Some of my skills</h4>
             <div class="row gx-10 gy-5" id="skills-container">
                <!-- Front end -->
                 <div class="col-lg-6 col-xl-6 col-xs-12 col-sm-12 col-md-12 justify-content-end d-flex align-items-sm-center align-items-lg-end align-right">
@@ -117,17 +118,18 @@
         
     </div>
 
+
+    <!-- Recet projects -->
     <div id="section-three">
         <div id="backgroundPattern">
-
             <!-- 
             <img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
              -->
         </div>
-        <button id="resetPattern">Reset Pattern</button>
+        <button id="resetPattern" class="btnGeneral">Reset Pattern</button>
         <div class="row mx-auto text-center gy-4  testClass" id="frontCard">
             <div class="col-12" id="projects-title">
-                <h1>Recent Projects</h1>
+                <h1 class="sectionTitle">Recent Projects</h1>
             </div>
             <div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-xs-12 projectCard">
                 <a href="https://www.google.com/" target="_blank">
@@ -164,9 +166,30 @@
         </div>
     </div>
 
+    <!-- Contact me -->
+    <div id="section-four" class="row mx-auto text-center">
+        <div class="col-12">
+            <h1 class="sectionTitle">
+                Hello there
+            </h1>
+            <a href="mailto:rafaelencinasr@gmail.com" class="btnGeneral" id="backTop">Send me an email!</a>
+        </div>    
+    
+    
+    
+    
+    
+    </div>
+    <br>
+    <br><br><br><br><br><br><br>
+  <!--   <a href="#" class="btnGeneral" id="backTop">Back to top</a> -->
 
 
-
+    <div id="footer">
+        <div id="credits">Designed and built by Rafael Encinas</div>
+        <div id="credits">Profile picture illustration by <a href="https://www.instagram.com/lilcrescentmoon/" target="_blank">@lilcrescentmoon</a></div>
+        <a href="https://github.com/rafaelencinasr/portfolio">Github repository</a>
+    </div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>

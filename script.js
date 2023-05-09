@@ -4,7 +4,7 @@ let bodyWidth = document.body.clientWidth;
 console.log("Body Width: " + bodyWidth);
 //Calculate how many icons per row to create
 let calcHowManyIcons = Math.floor(bodyWidth/62.9) -1 ;
-console.log("width/61: " + Math.floor(bodyWidth/62.9));
+console.log("width/62.9: " + Math.floor(bodyWidth/62.9));
 
 //Location to append the icons
 let backgroundPatternLocation = document.querySelector("#backgroundPattern");
@@ -20,7 +20,7 @@ for(let i = 0; i<calcHowManyIcons; i++){
 //how many icon containers are needed to fill the space.
 
 //Append "n" div containers with the img elements as childs, where n = recentProjectsBody / icon height = (Math.ceil(recentProjectsBody/62.9))
-for(let i = 0; i <= 6 ; i++){
+for(let i = 0; i <= 20 ; i++){
     backgroundPatternLocation.innerHTML += `
 <div>
 ${concatIcons}
@@ -81,3 +81,21 @@ let width = box.clientWidth;
 let heigth = box.clientHeight;
 
 
+let mailButton = document.querySelector("#mailButton");
+let buzonBandera = document.querySelector("#buzonBandera");
+
+//Trigger rotation when mouse enters "Send Message" button
+mailButton.addEventListener("mouseenter",()=>{ 
+    buzonBandera.style.transform = `rotate(0deg)`;
+})
+mailButton.addEventListener("mouseleave",()=>{
+    buzonBandera.style.transform = `rotate(119deg)`;
+})
+
+//Trigger rotation when mouse enters the mailbox flag element
+buzonBandera.addEventListener("mouseenter",()=>{
+    buzonBandera.style.transform = `rotate(0deg)`;
+})
+buzonBandera.addEventListener("mouseleave",()=>{
+    buzonBandera.style.transform = `rotate(119deg)`;
+})

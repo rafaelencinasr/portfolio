@@ -66,6 +66,7 @@
     font-weight: bold;
     font-size: 20px;
     transition: 150ms;
+    text-decoration: none;
 }
 
 #contact-me-btn:hover{
@@ -83,7 +84,7 @@
     margin: 0; 
 }
 
-#skills-title{
+.sectionTitle{
     font-size: 40px;
 }
 
@@ -207,7 +208,7 @@
     transition: 150ms;
     position: absolute;
     top: 0px;
-    left: 166px;
+    left: 165px;
 }
 
 .row {
@@ -278,4 +279,42 @@
 
 .projectCard>a:hover{
     color:grey
+}
+
+#section-four{
+    padding-top: 50px;
+}
+
+.btnGeneral{
+    background-color: #EEEBDF;
+    border: 1px solid #EB975B;
+    padding: 8px 20px;
+    border-radius: 4px;
+    color: #EB975B;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 150ms;
+    text-decoration: none;
+}
+
+.btnGeneral:hover{
+    background-color: #EB975B;
+    color: #EEEBDF;
+    transition: 150ms;
+}
+
+#footer{
+    width: 100%;
+    background-color: #EB975B;
+    color: white;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footer>a{
+    text-decoration: none;
+
 }

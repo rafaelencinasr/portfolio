@@ -379,7 +379,12 @@ filter: drop-shadow(2px 5px 2px rgba(128, 128, 128, 0.384));
     flex-direction: column;
 }
 
-#footer>a{
-    text-decoration: none;
+#footer>a, #footer>div>a{
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    color: white;
+    transition: text-decoration-color 300ms;
+}
 
+#footer>a:hover, #footer>div>a:hover{
+    text-decoration-color: rgba(255, 255, 255, 1);
 }

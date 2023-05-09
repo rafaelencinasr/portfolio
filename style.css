@@ -5,7 +5,7 @@
 
  body{
     margin: 0;
-    min-height: 100%;
+    /* min-height: 100%; */
     background-color: #EEEBDF;
     font-family: 'Josefin Sans', sans-serif;
  /*    display: flex;
@@ -248,7 +248,7 @@ filter: drop-shadow(2px 5px 2px rgba(128, 128, 128, 0.384));
     margin: 0 auto;
 }
 
-#frontCard{
+#projectCards{
     margin-top: 50px;
     position: absolute;
     top: 0;

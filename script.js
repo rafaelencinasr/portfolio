@@ -1,10 +1,12 @@
+//MCM Patter icon dimensions for calculations: 63px x 63px
+const mcmDimensions = 63;
 // Get the body width
 let bodyWidth = document.body.clientWidth;
 
 console.log("Body Width: " + bodyWidth);
 //Calculate how many icons per row to create
-let calcHowManyIcons = Math.floor(bodyWidth/63) -1 ;
-console.log("width/62.9: " + Math.floor(bodyWidth/3));
+let calcHowManyIcons = Math.floor(bodyWidth/mcmDimensions) -1 ;
+console.log("width/62.9: " + Math.floor(bodyWidth/mcmDimensions));
 
 //Location to append the icons
 let backgroundPatternLocation = document.querySelector("#backgroundPattern");
@@ -19,36 +21,53 @@ for(let i = 0; i<calcHowManyIcons; i++){
 //We need to get the "recentProjectsBody" section height in order to calculate
 //how many icon containers are needed to fill the space.
 
+// Funcion para calcular la altura del elemento contenedor
+let howManyRows = 0;
+setTimeout(() => {
+    let projectCards = document.querySelector("#projectCards");
+    let alturaElemento = projectCards.offsetHeight;
+    console.log("Altura: "+ alturaElemento);
+    howManyRows = Math.ceil(alturaElemento/mcmDimensions);
+    createMCMPattern(howManyRows);
+}, 0);
+
+
+
 //Append "n" div containers with the img elements as childs, where n = recentProjectsBody / icon height = (Math.ceil(recentProjectsBody/62.9))
-for(let i = 0; i <= 20 ; i++){
-    backgroundPatternLocation.innerHTML += `
-<div>
-${concatIcons}
-</div>
-`;
-}
 
-let mcmPattern = document.querySelector(".mcmPattern");
-let mcmPatterCollection = document.getElementsByClassName("mcmPattern")
+function createMCMPattern(howManyRows){
 
-for(let i=0; i< mcmPatterCollection.length ; i++){
-    mcmPatterCollection[i].addEventListener('mouseover',()=>{
-        //console.log("Pattern mouseover!")
-        let rotation = getCurrentRotation(mcmPatterCollection[i]);
-        rotation = Math.ceil(rotation/90.0)*90.0;
-        //revisar si el angulo calculado es diferente de 0, 90, 180, 270  o 360, y redondear
-        //if(rotation)
-        //console.log("rotation: " + rotation);
-        mcmPatterCollection[i].style.transform = `rotate(${rotation+90}deg)`;
-    }) 
-}
-
-let resetPatternBtn = document.querySelector("#resetPattern");
-resetPatternBtn.addEventListener("click",()=>{
-    for(let i=0; i< mcmPatterCollection.length ; i++){
-        mcmPatterCollection[i].style.transform = `rotate(0deg)`;
+    for(let i = 0; i <= howManyRows ; i++){
+        backgroundPatternLocation.innerHTML += `
+    <div>
+    ${concatIcons}
+    </div>
+    `;
     }
-})
+    
+    let mcmPattern = document.querySelector(".mcmPattern");
+    let mcmPatterCollection = document.getElementsByClassName("mcmPattern")
+    
+    for(let i=0; i< mcmPatterCollection.length ; i++){
+        mcmPatterCollection[i].addEventListener('mouseover',()=>{
+            //console.log("Pattern mouseover!")
+            let rotation = getCurrentRotation(mcmPatterCollection[i]);
+            rotation = Math.ceil(rotation/90.0)*90.0;
+            //revisar si el angulo calculado es diferente de 0, 90, 180, 270  o 360, y redondear
+            //if(rotation)
+            //console.log("rotation: " + rotation);
+            mcmPatterCollection[i].style.transform = `rotate(${rotation+90}deg)`;
+        }) 
+    }
+    
+    let resetPatternBtn = document.querySelector("#resetPattern");
+    resetPatternBtn.addEventListener("click",()=>{
+        for(let i=0; i< mcmPatterCollection.length ; i++){
+            mcmPatterCollection[i].style.transform = `rotate(0deg)`;
+        }
+    })
+}
+
 
 
 function getCurrentRotation(el){
@@ -73,14 +92,6 @@ function getCurrentRotation(el){
     return 0;
 }
 
-let frontCard = document.querySelector("#frontCard");
-let sectionStyle = window.getComputedStyle(frontCard,null);
-
-let box = document.querySelector(".testClass");
-let width = box.clientWidth;
-let heigth = box.clientHeight;
-
-
 let mailButton = document.querySelector("#mailButton");
 let buzonBandera = document.querySelector("#buzonBandera");
 
@@ -99,3 +110,4 @@ buzonBandera.addEventListener("mouseenter",()=>{
 buzonBandera.addEventListener("mouseleave",()=>{
     buzonBandera.style.transform = `rotate(119deg)`;
 })
+

@@ -3,8 +3,8 @@ let bodyWidth = document.body.clientWidth;
 
 console.log("Body Width: " + bodyWidth);
 //Calculate how many icons per row to create
-let calcHowManyIcons = Math.floor(bodyWidth/62.9) -1 ;
-console.log("width/62.9: " + Math.floor(bodyWidth/62.9));
+let calcHowManyIcons = Math.floor(bodyWidth/63) -1 ;
+console.log("width/62.9: " + Math.floor(bodyWidth/3));
 
 //Location to append the icons
 let backgroundPatternLocation = document.querySelector("#backgroundPattern");

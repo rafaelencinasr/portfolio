@@ -68,6 +68,19 @@ function createMCMPattern(howManyRows){
     })
 }
 
+function randomizePattern(){
+    let mcmPatterCollection = document.getElementsByClassName("mcmPattern");
+
+    for(let i=0; i< mcmPatterCollection.length ; i++){
+            let rotation = Math.floor(Math.random()*4)*90;
+            mcmPatterCollection[i].style.transform = `rotate(${rotation}deg)`;
+    }
+}
+
+let randomPattern = document.querySelector("#randomPattern");
+
+randomPattern.addEventListener("click", randomizePattern);
+
 
 
 function getCurrentRotation(el){
@@ -111,3 +124,7 @@ buzonBandera.addEventListener("mouseleave",()=>{
     buzonBandera.style.transform = `rotate(119deg)`;
 })
 
+
+setTimeout(()=>{
+    randomizePattern();
+},1)

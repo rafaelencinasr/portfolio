@@ -97,11 +97,11 @@ filter: drop-shadow(2px 5px 2px rgba(128, 128, 128, 0.384));
     margin-bottom: 70px;
 }
 
-.align-right>.skills-icons>img{
+.align-right>.skills-icons>a>img{
     margin-left: 15px;
 }
 
-.align-left>.skills-icons>img{
+.align-left>.skills-icons>a>img{
     margin-right: 15px;
 }
 

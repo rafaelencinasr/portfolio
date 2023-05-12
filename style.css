@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;  */
+    overflow-x: hidden
 } 
 
 #profile-pic{
@@ -103,6 +104,11 @@ filter: drop-shadow(2px 5px 2px rgba(128, 128, 128, 0.384));
 
 .align-left>.skills-icons>a>img{
     margin-right: 15px;
+}
+
+.align-left{
+    margin-right: 0;
+    padding-right: 0;
 }
 
 
@@ -264,12 +270,8 @@ filter: drop-shadow(2px 5px 2px rgba(128, 128, 128, 0.384));
     margin: 0;
 }
 
-.projectCard{
-    /* background-color: #EEEBDF8C; */
-    /* margin: 0 0px; */
-    /* background-color: #eeebdfc0; */
-    /* display: flex;
-    justify-content: center; */
+#projects-title>h1{
+    background-color: #eeebdfc0;
 }
 
 .projectCard>.card{
@@ -373,6 +375,22 @@ filter: drop-shadow(2px 5px 2px rgba(128, 128, 128, 0.384));
 }
 
 
+.material-symbols-outlined {
+    color: black;
+    vertical-align: middle;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 100
+  }
+
+  .material-symbols-outlined:hover{
+    transition: 150ms;
+    filter: drop-shadow(2px 2px 2px rgba(128, 128, 128, 0.568));
+}
+
+
 #buzon{
     margin: 0;
     padding: 0;
@@ -406,7 +424,8 @@ filter: drop-shadow(2px 5px 2px rgba(128, 128, 128, 0.384));
 
 
 #footer{
-    width: 100%;
+    /* width: 100%; */
+    text-align: center;
     background-color: #EB975B;
     color: white;
     padding: 25px 0;
@@ -425,3 +444,4 @@ filter: drop-shadow(2px 5px 2px rgba(128, 128, 128, 0.384));
 #footer>a:hover, #footer>div>a:hover{
     text-decoration-color: rgba(255, 255, 255, 1);
 }
+

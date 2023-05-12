@@ -27,7 +27,7 @@ setTimeout(() => {
     let projectCards = document.querySelector("#projectCards");
     let alturaElemento = projectCards.offsetHeight;
     console.log("Altura: "+ alturaElemento);
-    howManyRows = Math.ceil(alturaElemento/mcmDimensions);
+    howManyRows = Math.ceil(alturaElemento/mcmDimensions) +1;
     createMCMPattern(howManyRows);
 }, 0);
 

@@ -118,6 +118,10 @@ filter: drop-shadow(2px 5px 2px rgba(128, 128, 128, 0.384));
     left: 0;
 }
 
+.skills-icons>a{
+    text-decoration: none;
+}
+
 .shield-border-1{
     transition: 150ms;
     position: absolute;

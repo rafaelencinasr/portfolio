@@ -5,7 +5,7 @@ let bodyWidth = document.body.clientWidth;
 
 console.log("Body Width: " + bodyWidth);
 //Calculate how many icons per row to create
-let calcHowManyIcons = Math.floor(bodyWidth/mcmDimensions) -1 ;
+let calcHowManyIcons = Math.floor(bodyWidth/mcmDimensions) -2 ;
 console.log("width/62.9: " + Math.floor(bodyWidth/mcmDimensions));
 
 //Location to append the icons

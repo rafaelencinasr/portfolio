@@ -5,7 +5,7 @@ let bodyWidth = document.body.clientWidth;
 
 console.log("Body Width: " + bodyWidth);
 //Calculate how many icons per row to create
-let calcHowManyIcons = Math.floor(bodyWidth/mcmDimensions) -2 ;
+let calcHowManyIcons = Math.floor(bodyWidth/mcmDimensions) +0 ;
 console.log("width/62.9: " + Math.floor(bodyWidth/mcmDimensions));
 
 //Location to append the icons
@@ -14,8 +14,7 @@ let backgroundPatternLocation = document.querySelector("#backgroundPattern");
 //String to concatenate the img HTML element, repeats 
 let concatIcons = "";
 for(let i = 0; i<calcHowManyIcons; i++){
-    concatIcons += `<img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">
-    `;
+    concatIcons += `<img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">`;
 }
 
 //We need to get the "recentProjectsBody" section height in order to calculate

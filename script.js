@@ -22,13 +22,40 @@ for(let i = 0; i<calcHowManyIcons; i++){
 
 // Funcion para calcular la altura del elemento contenedor
 let howManyRows = 0;
+let projectCards = document.querySelector("#projectCards");
 setTimeout(() => {
-    let projectCards = document.querySelector("#projectCards");
     let alturaElemento = projectCards.offsetHeight;
     console.log("Altura: "+ alturaElemento);
     howManyRows = Math.ceil(alturaElemento/mcmDimensions) +1;
     createMCMPattern(howManyRows);
 }, 0);
+
+function windowResizeReset(){
+    console.log("windoResizeReset function called")
+    bodyWidth = document.body.clientWidth;
+    calcHowManyIcons = Math.floor(bodyWidth/mcmDimensions) +0 ;
+    concatIcons = "";
+    for(let i = 0; i<calcHowManyIcons; i++){
+        concatIcons += `<img src="./assets/mcm-pattern.svg" alt="" class="mcmPattern">`;
+    }
+    setTimeout(() => {
+        let alturaElemento = projectCards.offsetHeight;
+        console.log("Altura: "+ alturaElemento);
+        howManyRows = Math.ceil(alturaElemento/mcmDimensions) +1;
+        createMCMPattern(howManyRows);
+    }, 1);
+    
+    setTimeout(()=>{
+        randomizePattern();
+    },1)
+}
+
+window.addEventListener('resize', function(event) {
+    console.log("Window resized")
+    howManyRows = 0;
+    backgroundPatternLocation.innerHTML = ``;
+    windowResizeReset();
+}, true);
 
 
 
@@ -48,6 +75,24 @@ function createMCMPattern(howManyRows){
     let mcmPatterCollection = document.getElementsByClassName("mcmPattern")
     
     for(let i=0; i< mcmPatterCollection.length ; i++){
+
+        function randomRotationInterval(){
+            let min = 1;
+            let max = 150;
+            let rand = Math.floor(Math.random() * (max - min + 1) + min);
+            
+            let rotation = getCurrentRotation(mcmPatterCollection[i]);
+            rotation = Math.ceil(rotation/90.0)*90.0;
+            //revisar si el angulo calculado es diferente de 0, 90, 180, 270  o 360, y redondear
+            //if(rotation)
+            //console.log("rotation: " + rotation);
+            mcmPatterCollection[i].style.transform = `rotate(${rotation+90}deg)`;
+            
+            setTimeout(randomRotationInterval, rand*3000*Math.random());
+        }
+
+        randomRotationInterval();
+
         mcmPatterCollection[i].addEventListener('mouseover',()=>{
             //console.log("Pattern mouseover!")
             let rotation = getCurrentRotation(mcmPatterCollection[i]);

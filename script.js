@@ -47,14 +47,29 @@ function windowResizeReset(){
     
     setTimeout(()=>{
         randomizePattern();
-    },1)
+    },300)
+
+    resetFlag();
+}
+
+let resizeFlag = false;
+
+async function resetFlag(){
+    setTimeout(()=>{
+        resizeFlag = false;
+    },300)
 }
 
 window.addEventListener('resize', function(event) {
-    console.log("Window resized")
-    howManyRows = 0;
-    backgroundPatternLocation.innerHTML = ``;
-    windowResizeReset();
+    if(!resizeFlag){
+        resizeFlag = true;
+        console.log("Window resized")
+        howManyRows = 0;
+        backgroundPatternLocation.innerHTML = ``;
+        windowResizeReset();
+    } else{
+        console.log("Flag is active!")
+    }
 }, true);
 
 
